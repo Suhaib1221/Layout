@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .............................nav............................... */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    margin-right: 20px;
+    opacity: .6;
+}
+
+.nav-links a:hover {
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+#left {
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+
+#left .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#left .text h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+#left .text p {
+    opacity: .6;
+    line-height: 35px;
+    margin: 20px 0px 30px;
+}
+
+#left .text a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 1px solid
+}
+
+#left .text a:hover {
+    letter-spacing: 8px;
+}
+
+#right {
+    width: 60%;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.top-left {
+    width: 55%;
+    height: 100%;
+    background: url(img/cactus.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-right {
+    width: 45%;
+    height: 100%;
+    background: url(img/orange.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom {
+    width: 100%;
+    height: 50%;
+    background: url(img/brennan-ehrhardt-HALe2SmkWAI-unsplash.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:680px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    #right {
+        width: 100%;
+        /* height: 100%; */
+    }
+}
+
+@media (max-width:320px) {
+    #left .text h1 {
+        font-size: 70px;
+        margin-top: 50px;
+        /* height: 100%; */
+    }
+
+    #right {
+       margin-top: 30px;
+    }
+
+}
